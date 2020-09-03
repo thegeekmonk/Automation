@@ -2,6 +2,7 @@ package test;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 
 import config.PropertiesFile;
 
@@ -23,9 +24,10 @@ public class SeleniumTest {
 			driver = new ChromeDriver();
 			
 		}
-		else if(browser.equals("Firefox"))
+		else if(browser.equals("Edge"))
 		{
-			
+			System.setProperty("webdriver.edge.driver","C:\\Users\\AkhileshPC\\Selenium\\1001_Selenium\\lib\\edgedriver\\msedgedriver.exe");
+			driver = new EdgeDriver();
 		}		
 		
 	}
