@@ -26,7 +26,7 @@ public class SeleniumTest {
 		}
 		else if(browser.equals("Edge"))
 		{
-			System.setProperty("webdriver.edge.driver","C:\\Users\\AkhileshPC\\Selenium\\1001_Selenium\\lib\\edgedriver\\msedgedriver.exe");
+			System.setProperty("webdriver.edge.driver","C:\\Users\\AkhileshPC\\Selenium\\1002_Selenium_Properties\\lib\\edgedriver\\msedgedriver.exe");
 			driver = new EdgeDriver();
 		}		
 		
