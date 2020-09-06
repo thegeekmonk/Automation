@@ -24,7 +24,7 @@ public class WebdriverFindElement
 //		WebDriver driver = new EdgeDriver();
 		
 		driver.manage().window().maximize();		
-		driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(7,TimeUnit.SECONDS);
 		
 		driver.navigate().to("https://google.com/webhp?hl=en&sa=X&ved=0ahUKEwjYg8iuoNPrAhUP9nMBHZIGBdwQPAgI");
 		
@@ -42,12 +42,14 @@ public class WebdriverFindElement
 		
 		//driver.findElement(By.xpath("xpath_element_to_be_clicked")).click();
 		
-		List<WebElement> elements = driver.findElements(By.className("LC20lb DKV0Md"));
+		List<WebElement> elements = driver.findElements(By.partialLinkText("YouTube"));
 		
 		System.out.println("Result Size : "+elements.size());
+
 		
-		//element2.click();
+		//for()
 		
+		//element2.click();		
 		//driver.quit();
 
 	}
