@@ -20,11 +20,11 @@ public class WebdriverFindElement
 		WebElement element1 = driver.findElement(By.name("q"));
 		element1.sendKeys("youtube");
 		
-		driver.navigate().forward();
-		driver.findElement(By.className("gNO89b")).click();;
+		//driver.navigate().forward();
+		driver.findElement(By.className("gNO89b")).click();
 		//element2.click();
 		
-		driver.quit();
+		//driver.quit();
 
 	}
 
