@@ -1,6 +1,7 @@
 package test;
 
 import java.util.Collection;
+import java.util.List;
 
 import org.junit.Assert;
 import org.junit.Before;
@@ -14,7 +15,7 @@ import script.SeleniumTestScript;
 @RunWith(Parameterized.class)
 public class SeleniumTest 
 {
-    private static SeleniumTestScript selenium;   
+    private  SeleniumTestScript selenium;   
     private  WebElement element;
     
 	public SeleniumTest(WebElement element) 
@@ -32,7 +33,7 @@ public class SeleniumTest
 	}
 	
 	@Parameterized.Parameters
-	public static Collection input()
+	public  List input()
 	{
 		return selenium.elements;
 	}
