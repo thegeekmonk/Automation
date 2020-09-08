@@ -15,7 +15,7 @@ import script.SeleniumTestScript;
 public class SeleniumTest 
 {
     private static SeleniumTestScript selenium;   
-    private static WebElement element;
+    private  WebElement element;
     
 	public SeleniumTest(WebElement element) 
 	{
