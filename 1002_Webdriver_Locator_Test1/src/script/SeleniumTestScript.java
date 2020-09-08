@@ -23,14 +23,16 @@ public class SeleniumTestScript
      }
      
      public static void runTestScript()
-     {
+     {    	 
+    	 
     	 driver.get("https://google.com");
     	 
     	 //To find the text input element of google search page
     	 WebElement element = driver.findElement(By.name("q"));
     	 element.sendKeys("YouTube");   	 
     	 
-    	 elements = driver.findElements(By.partialLinkText("YouTube"));   	 
+    	 elements = driver.findElements(By.partialLinkText("YouTube"));
+    	 
     	 
      }
 }
