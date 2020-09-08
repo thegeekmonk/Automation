@@ -26,7 +26,7 @@ public class WebdriverFindElement
 		driver.manage().window().maximize();		
 		driver.manage().timeouts().implicitlyWait(7,TimeUnit.SECONDS);
 		
-		driver.navigate().to("https://google.com/webhp?hl=en&sa=X&ved=0ahUKEwjYg8iuoNPrAhUP9nMBHZIGBdwQPAgI");
+		driver.navigate().to("https://google.com/");
 		
 		WebElement element1 = driver.findElement(By.name("q"));
 		element1.sendKeys("youtube");
@@ -47,7 +47,8 @@ public class WebdriverFindElement
 		System.out.println("Result Size : "+elements.size());
 
 		
-		//for()
+		for(int i = 0;i < elements.size();i++)
+			System.out.println(elements.get(i).getText().contains("YouTube"));
 		
 		//element2.click();		
 		//driver.quit();
