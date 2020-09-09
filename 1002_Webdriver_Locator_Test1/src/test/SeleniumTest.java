@@ -33,7 +33,7 @@ public class SeleniumTest
 	}
 	
 	@Parameterized.Parameters
-	public  List input()
+	public  List<WebElement> input()
 	{
 		return selenium.elements;
 	}
