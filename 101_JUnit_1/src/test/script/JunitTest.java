@@ -1,11 +1,18 @@
 package test.script;
 
+import static org.junit.Assert.assertEquals;
+
+import org.junit.Test;
+
 public class JunitTest 
 {
+    private String str = "I am using Junit4";
 
-	public JunitTest() 
+	
+	@Test
+	public void testing()
 	{
-		// TODO Auto-generated constructor stub
-	}
+		assertEquals("I am using Junit4",str);
+	}	
 
 }
