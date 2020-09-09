@@ -15,7 +15,7 @@ import script.SeleniumTestScript;
 @RunWith(Parameterized.class)
 public class SeleniumTest 
 {
-    private  SeleniumTestScript selenium;   
+    private  static SeleniumTestScript selenium;   
     private  WebElement element;
     
 	public SeleniumTest(WebElement element) 
@@ -33,9 +33,9 @@ public class SeleniumTest
 	}
 	
 	@Parameterized.Parameters
-	public  List<WebElement> input()
+	public  static List<WebElement> input()
 	{
-		return selenium.elements;
+		return SeleniumTestScript.elements;
 	}
 	
 	@Test

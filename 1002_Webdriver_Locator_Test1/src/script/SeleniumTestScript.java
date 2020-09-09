@@ -11,7 +11,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class SeleniumTestScript 
 {
 	 public static WebDriver driver; 
-	 public List<WebElement> elements;
+	 public static List<WebElement> elements;
 	 
      public void setConfiguration()
      {
