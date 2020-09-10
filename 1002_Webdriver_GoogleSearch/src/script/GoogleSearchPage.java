@@ -12,12 +12,8 @@ import org.openqa.selenium.WebElement;
 import parent.GoogleSearch;
 
 public class GoogleSearchPage extends GoogleSearch
-{
-    
-	public  String searchString;
+{	
 	public static List<WebElement> elements;
-	
-	private Properties prop = new Properties();
 	
 	
 	//logic of google search and extracting result
@@ -25,19 +21,6 @@ public class GoogleSearchPage extends GoogleSearch
 	{
 		driver.get("https://google.com");
 		WebElement element = driver.findElement(By.name("q"));
-		
-		try 
-		{
-			InputStream input = new FileInputStream("C:\\Users\\AkhileshPC\\Selenium\\1002_Webdriver_GoogleSearch\\src\\external\\inputfile.properties");
-			prop.load(input);
-			
-			searchString = prop.getProperty(searchString);
-			
-			
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
 		
 		
 		element.sendKeys(searchString);
