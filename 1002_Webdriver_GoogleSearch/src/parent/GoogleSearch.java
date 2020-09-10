@@ -13,7 +13,7 @@ public class GoogleSearch {
 
 	public static WebDriver driver;
 	public  static String searchString;
-	public Properties prop = new Properties();
+	public static Properties prop = new Properties();
 	
 		
 	public GoogleSearch() {
@@ -26,15 +26,16 @@ public class GoogleSearch {
 		System.setProperty("webdriver.chrome.driver","C:\\Users\\AkhileshPC\\Selenium\\1002_Webdriver_GoogleSearch\\lib\\chromedriver\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(15,TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 		
 		try 
 		{
 			InputStream input = new FileInputStream("C:\\Users\\AkhileshPC\\Selenium\\1002_Webdriver_GoogleSearch\\src\\external\\inputfile.properties");
 			prop.load(input);
 			
-			searchString = prop.getProperty(searchString);
+			searchString = prop.getProperty("searchString");
 			
+			System.out.println("To BE : "+searchString);
 			
 		} catch (Exception e) {
 			// TODO Auto-generated catch block

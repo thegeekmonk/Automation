@@ -20,8 +20,7 @@ public class GoogleSearchPage extends GoogleSearch
 	public void runTestScript()
 	{
 		driver.get("https://google.com");
-		WebElement element = driver.findElement(By.name("q"));
-		
+		WebElement element = driver.findElement(By.name("q"));		
 		
 		element.sendKeys(searchString);
 		
