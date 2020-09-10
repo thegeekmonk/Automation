@@ -12,7 +12,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class GoogleSearch {
 
 	public static WebDriver driver;
-	public  static String searchString;
+	public static String searchString;
 	public static Properties prop = new Properties();
 	
 		
@@ -35,7 +35,7 @@ public class GoogleSearch {
 			
 			searchString = prop.getProperty("searchString");
 			
-			System.out.println("To BE : "+searchString);
+//			System.out.println("To BE : "+searchString);
 			
 		} catch (Exception e) {
 			// TODO Auto-generated catch block

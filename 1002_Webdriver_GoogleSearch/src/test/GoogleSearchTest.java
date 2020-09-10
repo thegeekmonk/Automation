@@ -35,7 +35,7 @@ public class GoogleSearchTest extends GoogleSearch
 		
 		for(WebElement element : page.elements)
 		{   
-			System.out.println(element.getText());
+			System.out.println("\nLink Text ---->  "+element.getText());
 			assertTrue(element.getText().contains(page.searchString));
 		}
 		
