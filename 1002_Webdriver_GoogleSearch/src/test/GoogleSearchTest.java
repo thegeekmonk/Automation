@@ -2,12 +2,13 @@ package test;
 
 import static org.junit.Assert.assertTrue;
 
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.WebElement;
 
+import page.GoogleSearchPage;
 import parent.GoogleSearch;
-import script.GoogleSearchPage;
 
 public class GoogleSearchTest extends GoogleSearch
 {
@@ -17,8 +18,7 @@ public class GoogleSearchTest extends GoogleSearch
 	public GoogleSearchTest() {
 		// TODO Auto-generated constructor stub
 	}
-	
-	
+		
 	@Before
 	public void initialize()
 	{
@@ -35,11 +35,16 @@ public class GoogleSearchTest extends GoogleSearch
 		
 		for(WebElement element : page.elements)
 		{   
-			System.out.println("\nLink Text ---->  "+element.getText());
-			assertTrue(element.getText().contains(page.searchString));
-		}
+//			System.out.println("\nLink Text ---->  "+element.getText());
+			 assertTrue(element.getText().contains(searchString));
+		}		
 		
-		
+	}
+	
+	@After
+	public void closure()
+	{
+		driver.close();
 	}
 
 }

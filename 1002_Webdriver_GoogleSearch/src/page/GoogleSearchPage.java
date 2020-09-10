@@ -1,4 +1,4 @@
-package script;
+package page;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
