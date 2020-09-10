@@ -8,22 +8,23 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
+import org.junit.runners.Parameterized.Parameters;
 import org.openqa.selenium.WebElement;
 
 import script.SeleniumTestScript;
 
-@RunWith(Parameterized.class)
+//@RunWith(Parameterized.class)
 public class SeleniumTest 
 {
-    private  static SeleniumTestScript selenium;   
-    private  WebElement element;
+    private  SeleniumTestScript selenium;   
+//    private  WebElement element;
     
-	public SeleniumTest(WebElement element) 
-	{
-		// TODO Auto-generated constructor stub
-		this.element = element;
-	}
-	
+//	public SeleniumTest(WebElement element) 
+//	{
+//		// TODO Auto-generated constructor stub
+//		this.element = element;
+//	}
+//	
 	@Before
 	public void initialize()
 	{
@@ -32,15 +33,16 @@ public class SeleniumTest
 		selenium.runTestScript();
 	}
 	
-	@Parameterized.Parameters
-	public  static List<WebElement> input()
-	{
-		return SeleniumTestScript.elements;
-	}
+//	@Parameters
+//	public  static Iterable<? extends Object> input()
+//	{
+//		return SeleniumTestScript.elements;
+//	}
 	
 	@Test
 	public void testSeleniumTest()
 	{
+		for(WebElement element : selenium.elements)
 	     Assert.assertTrue(element.getText().contains("YouTube"));	
 	}
 

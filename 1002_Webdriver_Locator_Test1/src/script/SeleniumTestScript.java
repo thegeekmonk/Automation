@@ -18,8 +18,7 @@ public class SeleniumTestScript
     	 System.setProperty("webdriver.chrome.driver","C:\\Users\\AkhileshPC\\Selenium\\1002_Webdriver_Locator_Test1\\lib\\chromedriver\\chromedriver.exe");
     	 driver = new ChromeDriver();
     	 driver.manage().window().maximize();
-    	 driver.manage().timeouts().implicitlyWait(7,TimeUnit.SECONDS);
-    	  
+    	 driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);    	  
      }
      
      public void runTestScript()
@@ -31,8 +30,7 @@ public class SeleniumTestScript
     	 WebElement element = driver.findElement(By.name("q"));
     	 element.sendKeys("YouTube");   	 
     	 
-    	 elements = driver.findElements(By.partialLinkText("YouTube"));
-    	 
+    	 elements = driver.findElements(By.partialLinkText("YouTube"));   	 
     	 
      }
 }
