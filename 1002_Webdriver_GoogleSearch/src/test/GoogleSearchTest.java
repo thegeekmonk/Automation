@@ -30,9 +30,16 @@ public class GoogleSearchTest extends GoogleSearch
 	
 	@Test
 	public void testGoogleSearchPage()
-	{
+	{   
+		System.out.println("Google Result Size :  "+page.elements.size());
+		
 		for(WebElement element : page.elements)
+		{   
+			System.out.println(element.getText());
 			assertTrue(element.getText().contains(page.searchString));
+		}
+		
+		
 	}
 
 }
