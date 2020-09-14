@@ -2,6 +2,7 @@ package test;
 
 import static org.junit.Assert.assertEquals;
 
+import org.junit.Ignore;
 import org.junit.Test;
 
 import script.JUnitMessage;
@@ -19,6 +20,7 @@ public class JUnitMessageTest
 		assertEquals(message,junitMsg.printMessage());
 	}
 	
+	@Ignore
 	@Test
 	public void testPrintHiMessage()
 	{   
