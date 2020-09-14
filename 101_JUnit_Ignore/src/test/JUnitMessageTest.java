@@ -15,10 +15,15 @@ public class JUnitMessageTest
 	@Test
 	public void testPrintMessage()
 	{
-		System.out.println("Inside Printing Message");
-		
+		System.out.println("Inside Printing Message");		
 		assertEquals(message,junitMsg.printMessage());
 	}
 	
+	@Test
+	public void testPrintHiMessage()
+	{
+		System.out.println("Inside Printing Hi Message");
+		assertEquals(message,junitMsg.printHiMessage());
+	}	
 	
 }
