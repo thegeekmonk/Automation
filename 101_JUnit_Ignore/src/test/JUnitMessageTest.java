@@ -20,7 +20,7 @@ public class JUnitMessageTest
 		assertEquals(message,junitMsg.printMessage());
 	}
 	
-	@Ignore
+	@Ignore("Testing @Ignore Annotation")
 	@Test
 	public void testPrintHiMessage()
 	{   
