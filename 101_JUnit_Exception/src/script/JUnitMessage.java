@@ -10,11 +10,13 @@ public class JUnitMessage
 	}
      
     
-	public void divide()
+	public boolean divide()
 	{
 		int division = num/0;
 		
 		System.out.println("Division is : "+division);
+		
+		return true;
 	}
 	
 }
