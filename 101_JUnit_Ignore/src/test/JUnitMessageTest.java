@@ -13,6 +13,7 @@ public class JUnitMessageTest
 	
 	private JUnitMessage junitMsg = new JUnitMessage(message);
 	
+	@Ignore
 	@Test
 	public void testPrintMessage()
 	{
