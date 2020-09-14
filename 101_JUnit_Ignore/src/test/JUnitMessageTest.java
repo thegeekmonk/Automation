@@ -21,7 +21,8 @@ public class JUnitMessageTest
 	
 	@Test
 	public void testPrintHiMessage()
-	{
+	{   
+		message = "Hi "+message;
 		System.out.println("Inside Printing Hi Message");
 		assertEquals(message,junitMsg.printHiMessage());
 	}	
