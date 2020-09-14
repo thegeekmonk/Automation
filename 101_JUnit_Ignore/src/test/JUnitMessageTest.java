@@ -7,6 +7,7 @@ import org.junit.Test;
 
 import script.JUnitMessage;
 
+@Ignore
 public class JUnitMessageTest 
 {
     String message = "Akhilesh";
