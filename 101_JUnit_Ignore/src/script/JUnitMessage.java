@@ -12,7 +12,7 @@ public class JUnitMessage {
 	
 	public String printMessage()
 	{
-		System.out.println("Printing Message : "+msg);
+		System.out.println(msg);
 				
 		return msg;
 	}
@@ -21,7 +21,7 @@ public class JUnitMessage {
 	{
 		msg = "Hi "+msg;
 		
-		System.out.println("Printing Message : Hi "+msg);
+		System.out.println(msg);
 		return msg;
 	}
 

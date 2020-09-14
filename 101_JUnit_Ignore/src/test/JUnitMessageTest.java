@@ -8,7 +8,7 @@ import script.JUnitMessage;
 
 public class JUnitMessageTest 
 {
-    String message = "Hello";
+    String message = "Akhilesh";
 	
 	private JUnitMessage junitMsg = new JUnitMessage(message);
 	
