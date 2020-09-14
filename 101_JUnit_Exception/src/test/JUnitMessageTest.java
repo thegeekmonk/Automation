@@ -11,7 +11,8 @@ public class JUnitMessageTest {
 	JUnitMessage junit = new JUnitMessage(8);
 	
 	
-	@Test(expected = ArithmeticException.class)
+//	@Test(expected = ArithmeticException.class)
+	@Test
 	public void testDivide()
 	{
 		junit.divide();
