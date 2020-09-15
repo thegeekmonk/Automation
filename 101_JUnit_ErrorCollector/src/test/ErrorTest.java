@@ -26,5 +26,11 @@ public class ErrorTest
     	}
     }
     
+    @Test
+    public void testMethod()
+    {
+    	Assert.assertEquals("Hello","Hello");
+    }
+    
     
 }
