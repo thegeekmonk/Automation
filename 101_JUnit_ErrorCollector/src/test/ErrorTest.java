@@ -16,9 +16,8 @@ public class ErrorTest
     	collector.addError(new Throwable("This is first error to be collected"));
     	
     	try
-    	{
-    		
-    	Assert.assertTrue("I love Algorithm".contains("Algorthm"));
+    	{   		
+    	  Assert.assertTrue("I love Algorithm".contains("Algorthm"));
     	}
     	catch(Throwable t)
     	{
