@@ -8,14 +8,22 @@ import org.junit.rules.ErrorCollector;
 public class ErrorTest 
 {
     @Rule    
-	ErrorCollector collector = new ErrorCollector();
+	public ErrorCollector collector = new ErrorCollector();
     
     @Test
     public void displayError()
     {
     	collector.addError(new Throwable("This is first error to be collected"));
     	
-    	Assert.assertTrue("I love Algorithm".contains("Algotithm"));
+    	try
+    	{
+    		
+    	Assert.assertTrue("I love Algorithm".contains("Algorthm"));
+    	}
+    	catch(Throwable t)
+    	{
+    		collector.addError(t);
+    	}
     }
     
     
