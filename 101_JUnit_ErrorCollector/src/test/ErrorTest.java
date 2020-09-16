@@ -17,11 +17,11 @@ public class ErrorTest
     	
     	try
     	{   		
-    	  Assert.assertTrue("I love Algorithm".contains("Algorthm"));
+    	  Assert.assertTrue("I love Algorithm".contains("Algorthm")); //checking boolean assertion
     	}
     	catch(Throwable t)
     	{
-    		collector.addError(t);
+    		collector.addError(t); //incase if error occurs , it will be collected
     	}
     }
     
